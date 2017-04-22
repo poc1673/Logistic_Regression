@@ -79,14 +79,14 @@ grad_desc <- function(b0,fun,tol = 1e-10,step = .1){
 
 # Implementation of multi-class regression --------------------------------
 
-# I implemented the multi-class version of the probabiliity function to produce a matrix of the class probabilities.  Let K be the number of classes.
+# I implemented the multi-class version of the probability function to produce a matrix of the class probabilities.  Let K be the number of classes.
 # Inputs:
 # [1]  X - A N*(K-1) by M design matrix.
-# [2]  init_betas - A N*(K-1) length design matrix.
+# [2]  beta - A N*(K-1) length design matrix.
 # [3]  classes - The number of classes we are predicting.
 
 # Outputs:
-# A K by M matrix containing the class probabilities calculated as:
+# A K by N matrix containing the class probabilities calculated as:
 
 find_pi_multi <- function(X,beta,classes){
   vars <- ncol(X)
