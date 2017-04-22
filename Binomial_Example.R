@@ -1,5 +1,5 @@
 rm(list = ls())
-source("/home/peter/Dropbox/Data Science/ML Scripts/Logistic Regression/Log_Functions.R")
+source("Log_Functions.R")
 set.seed(13)
 
 mydata <- read.csv("http://www.ats.ucla.edu/stat/data/binary.csv")
